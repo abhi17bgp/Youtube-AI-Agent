@@ -26,7 +26,7 @@ let activePage = null;
 async function initBrowser() {
   if (!browser) {
     browser = await puppeteer.launch({
-      headless: false,
+      headless: "new",
       userDataDir: "./automation-profile",
       args: [
         "--start-maximized",
